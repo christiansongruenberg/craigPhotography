@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/photos.css">
+    <title></title>
+</head>
+<body>
+    <div id="photos">
+        <% photos.forEach(function(photo) { %>
+        <div class="photo">
+            <img src="/photos/<%= photo.fileName %>" alt=""/>
+            <h2><%= photo.description %></h2>
+        </div>
+        <%})%>
+    </div>
+</body>
+</html>
