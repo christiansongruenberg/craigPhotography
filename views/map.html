@@ -13,12 +13,23 @@
             jQuery.noConflict();
             $('#map').vectorMap({
                 map: 'world_mill_en',
-                backgroundColor: 'hsl(120, 60%, 70%)'
+                backgroundColor: 'Black',
+                zoomAnimate: true,
+                regionStyle: {
+                    initial:{
+                        fill: 'grey'
+                    }
+                },
+                focusOn: {
+                    region: 'IN',
+                    scale: 2,
+                    animate: true
+                }
             });
         })
     </script>
 </head>
 <body>
-<div id="map" style="width: 600px; height: 400px"></div>
+<div id="map" style="width: 1200px; height: 400px"></div>
 </body>
 </html>
