@@ -82,5 +82,9 @@ exports.testFunction = function(formidable){
         res.render("slider");
     });
 
+    router.get('/map', function(req,res,next){
+       res.render("map");
+    });
+
     return router;
 };
